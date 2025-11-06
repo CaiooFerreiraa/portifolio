@@ -22,7 +22,8 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  background-color: var(--bg-color-one);
 }
 
 #root {
@@ -31,7 +32,7 @@ body {
   background-color: var(--bg-color-one);
 }
 
-#header {
+header {
   background-color:  var(--bg-color-html);
 }
 
