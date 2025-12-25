@@ -55,24 +55,25 @@
 
 .infos-apresentation {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 65%;
   height: 400px;
-  padding: 25px 0 25px 32px;
   border-radius: 100px;
   margin: 50px auto;
   background-color: var(--bg-color-two);
+  justify-content: center;
+  align-items: center;
 
   div {
     display: flex;
     margin: auto;
-    align-items: center;
     gap: 10px;
+    width: 75%;
+    align-items: center;
     color: white;
   }
 
-  div>span {
+  div > span {
     font-size: 50px;
     color: var(--br-color-one);
   }
