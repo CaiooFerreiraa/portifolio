@@ -1,0 +1,130 @@
+:root {
+  --size-bb-tecnology: 120px;
+}
+
+#skills {
+  background-image: url('./codigo.jpg');
+  background-size: cover;
+  background-position: center left;
+}
+
+#skills .container {
+  background-color: var(--bg-color-one-transparent-skills);
+  padding: 50px 0;
+}
+
+#technology-session h1 {
+  position: relative;
+  color: var(--br-color-one);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#technology-session span {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#technology-session .lineTittle {
+  position: relative;
+  width: 50%;
+  height: 4px;
+  background-color: var(--br-color-one);
+  display: block;
+  margin: 5px auto;
+}
+
+#technology-session .lineTittle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--br-color-one);
+  top: -3px;
+  left: -5px;
+}
+
+#technology-session .lineTittle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--br-color-one);
+  top: -3px;
+  right: -5px;
+}
+
+#technology-session span {
+  color: white;
+}
+
+.cards-technology {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.cards-technology .card-technology {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 75%;
+  border-radius: 10px;
+  height: 135px;
+  margin: auto;
+  background-color: var(--br-color-two);
+  overflow: hidden;
+
+  i {
+    font-size: 40px;
+  }
+}
+
+.cards-technology .card-technology::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--bg-color-css);
+  left: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.bubbles-technology {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bubbles-technology .bubble-technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.bubble-technology div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
+  width: var(--size-bb-tecnology);
+  height: var(--size-bb-tecnology);
+  border-radius: 50%;
+}
+
+.bubble-technology span {
+  font-size: 25px;
+  font-weight: bold;
+}

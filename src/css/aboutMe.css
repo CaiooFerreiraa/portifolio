@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+#about-me {
+  background-image: url("/background.png");
+  width: 100%;
+  padding: 50px 0;
+}
+
+#about-me h1 {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  border: 4px solid var(--br-color-one);
+  padding: 15px 0;
+  text-align: center;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: var(--bg-color-one);
+  color: white;
+}
+
+#about-me p {
+  background-color: var(--bg-color-one);
+  width: 90%;
+  margin: auto;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font: var(--font-ibm);
+}
+
+#about-me .tag-literal {
+  color: var(--br-color-two);
+  margin-bottom: 5px;
+}
+
+#about-me .text-enfase {
+  color: var(--br-color-one);
+}
+
+#about-me div, h2 {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+#about-me img {
+  display: block;
+  width: 70%;
+  height: min-content;
+  margin: 50px auto 0 auto;
+  border-radius: 20px;
+}
