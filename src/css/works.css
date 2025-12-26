@@ -1,3 +1,7 @@
+:root {
+  --size-button: 32px;
+}
+
 #work-session {
   background-image: url('./work-background.jpg');
   background-size: cover;
@@ -60,6 +64,15 @@
   text-align: center;
 }
 
+#work-session .link-project-github {
+  padding-bottom: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
 /* ======= CONTAINER ======= */
 .monitors-container {
   display: flex;
@@ -74,7 +87,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   flex-wrap: nowrap;
   width: 100%;
   max-width: 900px;
@@ -82,12 +95,35 @@
   margin-bottom: 40px;
 }
 
+.monitors .arrow-work-left, .arrow-work-right {
+  background-color: transparent;
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  border: none;
+  top: 50%;
+  cursor: pointer;
+
+  i {
+    color: white;
+    font-size: var(--size-button);
+  }
+}
+
+.monitors .arrow-work-left {
+  left: 10px;
+}
+
+.monitors .arrow-work-right {
+  right: 10px;
+} 
+
 .link-work {
   position: absolute;
-  top: 20%;
-  right: 15%;
+  top: 10%;
+  right: 12%;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -105,34 +141,35 @@
 .monitor::after {
   content: "";
   position: absolute;
-  bottom: -35px;
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
   background: #2d313a;
 }
 
 .monitor::before {
   content: "";
   position: absolute;
-  bottom: -45px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 20px;
+  width: 60px;
+  height: 10px;
   background: #2d313a;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 .m-one {
-  width: 160px;
-  height: 200px;
+  width: 35%;
+  height: 125px;
 }
 
 .m-two {
   align-self: flex-end;
-  height: 120px;
+  width: 40%;
+  height: 90px; 
 }
 
 /* ======= TELA ======= */
@@ -155,10 +192,6 @@
 
 /* ======= RESPONSIVIDADE ======= */
 @media (min-width: 700px) {
-  .monitors {
-    gap: 10px;
-  }
-
   .link-work {
     right: 16%;
     top: 25%;

@@ -7,7 +7,9 @@ export default function Monitors() {
 
   return (
     <div className="monitors">
-      <button type="button" className="material-symbols-outlined arrow-work">arrow_back_ios</button>
+      <button type="button" className="arrow-work-left">
+        <i class="material-symbols-outlined">arrow_circle_left</i>
+      </button>
       <a href={urlProject} className="link-work" target="_self">Ver Aplicação</a>
       <div className="monitor m-one">
         <div className="screen">
@@ -20,7 +22,9 @@ export default function Monitors() {
           <img src={imgHorizontal} alt="Monitor com website" />
         </div>
       </div>
-      <button type="button" className="material-symbols-outlined arrow-work">arrow_forward_ios</button>
+      <button type="button" className="material-symbols-outlined arrow-work-right">
+        <i class="material-symbols-outlined">arrow_circle_right</i>
+      </button>
     </div>
   )
 }

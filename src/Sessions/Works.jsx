@@ -13,7 +13,7 @@ export default function Works() {
       </div>
       <div className="monitors-container">
         <Monitors />
-        <a href="" className="link-project-github">Link github</a>
+        <a href="" className="link-project-github">Link do projeto no github</a>
       </div>
     </div>
   )
